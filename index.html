@@ -181,11 +181,13 @@ h1 em { font-style:italic; color:var(--ember); }
 }
 @keyframes spin { to { transform:rotate(360deg); } }
 .hero-fireplace {
-  width:55%;
-  max-width:340px;
-  position:relative; z-index:2;
+width: 57%;
+  max-width: 395px;
+  position: relative;
+  z-index: 2;
+  translate: 0 -100px;
 }
-.hero-fireplace svg { width:100%; }
+.hero-fireplace img { width:100%; }
 /* warm glow behind fireplace */
 .hero-glow {
   position:absolute;
@@ -292,7 +294,7 @@ h2 em { font-style:italic; color:var(--ember); }
 }
 .feat-main:hover .feat-thumb,
 .feat-card:hover .feat-thumb { transform:scale(1.04); }
-.feat-thumb svg { width:38%; opacity:.18; }
+.feat-thumb img, .feat-thumb svg { width:25%; }
 .feat-info {
   position:absolute; bottom:0; left:0; right:0;
   background:linear-gradient(to top, rgba(247,243,238,1) 40%, rgba(247,243,238,0) 100%);
@@ -580,31 +582,7 @@ footer { background:var(--ink); color:rgba(245,238,223,.6); padding:80px 5vw 40p
       <div class="hero-circle"></div>
       <div class="hero-circle hero-circle-2"></div>
       <div class="hero-fireplace">
-        <svg viewBox="0 0 280 340" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Portal frame -->
-          <rect x="20" y="20" width="240" height="280" rx="2" stroke="#8a6c3a" stroke-width="1.5"/>
-          <rect x="8" y="8" width="264" height="300" rx="1" stroke="rgba(139,108,58,.3)" stroke-width="1"/>
-          <!-- Arch opening -->
-          <path d="M55 280 L55 120 Q55 60 140 60 Q225 60 225 120 L225 280 Z" stroke="#8a6c3a" stroke-width="1.2" fill="rgba(26,22,18,.6)"/>
-          <!-- Flames -->
-          <ellipse cx="140" cy="260" rx="55" ry="10" fill="#b85c2a" opacity="0.35"/>
-          <ellipse cx="140" cy="220" rx="34" ry="48" fill="#c8742a" opacity="0.45"/>
-          <ellipse cx="140" cy="185" rx="22" ry="42" fill="#d4903a" opacity="0.38"/>
-          <ellipse cx="140" cy="160" rx="13" ry="32" fill="#e0b050" opacity="0.3"/>
-          <ellipse cx="120" cy="230" rx="20" ry="38" fill="#b85020" opacity="0.3"/>
-          <ellipse cx="160" cy="235" rx="18" ry="35" fill="#c06028" opacity="0.28"/>
-          <!-- Logs -->
-          <ellipse cx="110" cy="272" rx="28" ry="8" fill="#3d2810" opacity="0.7"/>
-          <ellipse cx="165" cy="268" rx="24" ry="7" fill="#3d2810" opacity="0.6"/>
-          <!-- Base -->
-          <rect x="20" y="295" width="240" height="45" rx="1" fill="#e8dfd3" stroke="#8a6c3a" stroke-width="1"/>
-          <rect x="0" y="320" width="280" height="20" rx="1" fill="#ddd0b4" stroke="rgba(139,108,58,.3)" stroke-width="1"/>
-          <!-- Mantel details -->
-          <line x1="20" y1="295" x2="260" y2="295" stroke="#8a6c3a" stroke-width="0.5" opacity="0.5"/>
-          <!-- Side pilasters -->
-          <rect x="20" y="20" width="28" height="275" fill="rgba(232,223,211,.15)" stroke="#8a6c3a" stroke-width="0.5" opacity="0.5"/>
-          <rect x="232" y="20" width="28" height="275" fill="rgba(232,223,211,.15)" stroke="#8a6c3a" stroke-width="0.5" opacity="0.5"/>
-        </svg>
+        <img src="./florencziya.png">
       </div>
     </div>
     <div class="hero-corner">Москва · Россия</div>
@@ -677,16 +655,8 @@ footer { background:var(--ink); color:rgba(245,238,223,.6); padding:80px 5vw 40p
 
   <div class="feat-layout">
     <div class="feat-main rv">
-      <div class="feat-thumb" style="background:linear-gradient(160deg, #e8dfd3 0%, #ddd0b4 50%, #d0c4a8 100%);">
-        <svg viewBox="0 0 280 340" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="20" y="20" width="240" height="280" stroke="#8a6c3a" stroke-width="1.5"/>
-          <path d="M55 280 L55 120 Q55 60 140 60 Q225 60 225 120 L225 280 Z" stroke="#8a6c3a" stroke-width="1.2" fill="rgba(176,144,100,.15)"/>
-          <ellipse cx="140" cy="255" rx="55" ry="10" fill="#b85c2a" opacity="0.3"/>
-          <ellipse cx="140" cy="215" rx="35" ry="50" fill="#c8742a" opacity="0.4"/>
-          <ellipse cx="140" cy="180" rx="22" ry="42" fill="#d4903a" opacity="0.3"/>
-          <ellipse cx="140" cy="155" rx="12" ry="30" fill="#e0b050" opacity="0.25"/>
-          <rect x="20" y="295" width="240" height="25" fill="#ddd0b4" stroke="#8a6c3a" stroke-width="1"/>
-        </svg>
+      <div class="feat-thumb" style="background:linear-gradient(160deg, #e8dfd3 0%, #ddd0b4 50%, #d0c4a8 100%); align-items: start;">
+        <img src="./venecziya.png" style='width: 40%;'>
       </div>
       <div class="feat-badge">Хит продаж</div>
       <div class="feat-info">
@@ -699,14 +669,7 @@ footer { background:var(--ink); color:rgba(245,238,223,.6); padding:80px 5vw 40p
 
     <div class="feat-card rv d1">
       <div class="feat-thumb" style="background:linear-gradient(135deg, #efe9e0 0%, #e4d8c8 100%);">
-        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="15" y="20" width="170" height="155" stroke="#8a6c3a" stroke-width="1.2"/>
-          <rect x="30" y="45" width="140" height="100" fill="rgba(176,144,100,.1)" stroke="#8a6c3a" stroke-width="0.8"/>
-          <ellipse cx="100" cy="130" rx="42" ry="7" fill="#b85c2a" opacity="0.25"/>
-          <ellipse cx="100" cy="108" rx="26" ry="30" fill="#c8742a" opacity="0.4"/>
-          <ellipse cx="100" cy="90" rx="14" ry="22" fill="#e0b050" opacity="0.28"/>
-          <rect x="15" y="170" width="170" height="30" fill="#ddd0b4" stroke="#8a6c3a" stroke-width="0.8"/>
-        </svg>
+        <img src="./flying-kamin.png" style='transform: translateY(-100px);'>
       </div>
       <div class="feat-info">
         <div class="feat-type">Газовый · Линейный</div>
@@ -717,15 +680,8 @@ footer { background:var(--ink); color:rgba(245,238,223,.6); padding:80px 5vw 40p
     </div>
 
     <div class="feat-card rv d2">
-      <div class="feat-thumb" style="background:linear-gradient(160deg, #ede6da 0%, #e0d6c4 100%);">
-        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="100" cy="95" r="70" stroke="#8a6c3a" stroke-width="1.2"/>
-          <circle cx="100" cy="95" r="55" stroke="rgba(139,108,58,.4)" stroke-width="0.6" stroke-dasharray="3 3"/>
-          <ellipse cx="100" cy="140" rx="35" ry="7" fill="#b85c2a" opacity="0.25"/>
-          <ellipse cx="100" cy="118" rx="22" ry="28" fill="#c8742a" opacity="0.42"/>
-          <ellipse cx="100" cy="100" rx="12" ry="22" fill="#e0b050" opacity="0.28"/>
-          <rect x="30" y="158" width="140" height="25" fill="#ddd0b4" stroke="#8a6c3a" stroke-width="0.8"/>
-        </svg>
+      <div class="feat-thumb" style="background:linear-gradient(135deg, #ede6da 0%, #e0d6c4 100%);">
+        <img src="./siena.png" style='transform: translateY(-80px);'>
       </div>
       <div class="feat-info">
         <div class="feat-type">Дровяной · Угловой</div>
